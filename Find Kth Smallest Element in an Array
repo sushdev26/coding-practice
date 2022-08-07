@@ -5,7 +5,7 @@ class Solution {
             minHeap.add(nums[i]);
         }
         for(int i=k;i<nums.length;i++){
-            if(nums[i] < minHeap.peek()){
+            if(minHeap.peek() > nums[i]){
                 minHeap.poll();
                 minHeap.add(nums[i]);
             }
