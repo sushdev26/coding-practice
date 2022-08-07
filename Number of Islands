@@ -13,7 +13,7 @@ class Solution {
             }
         }
         return noOfIsland;
-    }
+    } 
     
     public void mark_current_island(char[][] grid, int x, int y, int rows,int cols){
         if(x <0 || x >= rows || y < 0 || y >=cols || grid[x][y] != '1')
@@ -24,5 +24,4 @@ class Solution {
         mark_current_island(grid,x+1,y,rows,cols);
         mark_current_island(grid,x,y+1,rows,cols);
     }
-    
 }
